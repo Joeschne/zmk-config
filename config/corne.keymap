@@ -21,22 +21,17 @@
 #define BLU 7 // bluetooth control layer
 
 // Home Row Mods
-#define HRML(k1, k2, k3, k4) &ht LGUI k1   &ht LALT k2   &ht LCTRL k3   &ht LSHFT k4
-#define HRMR(k1, k2, k3, k4) &ht RSFT k1   &ht RCTRL k2   &ht RALT k3   &ht RGUI k4
+#define HRML(k1, k2, k3, k4) &mt LGUI k1   &mt LALT k2   &mt LCTRL k3   &mt LSHFT k4
+#define HRMR(k1, k2, k3, k4) &mt RSFT k1   &mt RCTRL k2   &mt RALT k3   &mt RGUI k4
+
+&mt {
+        flavor = "tap-preferred";
+        tapping-term-ms = <220>;
+        quick-tap-ms = <150>;
+        global-quick-tap;
+}
 
 / {
-    behaviors {
-        ht: hold_tap {
-            label = "hold_tap";
-            compatible = "zmk, behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <220>;
-            quick-tap-ms = <150>;
-            global-quick-tap;
-            bindings = <&kp>, <&kp>;
-        };
-    };
 
     conditional_layers {
         compatible = "zmk,conditional-layers";
