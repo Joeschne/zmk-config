@@ -15,9 +15,9 @@
 #define SYM 2 // symbols
 #define NAV 3 // navigation
 #define MOU 4 // mouse emulation
-#define FUN 5 // f-keys
-#define MED 6 // media layer
-#define BLU 7 // bluetooth control layer
+#define MED 5 // media layer
+#define FUN 6 // f-keys
+#define BLU 7 // bluetooth control layer^îoe
 
 &mt {
         flavor = "tap-preferred";
@@ -57,7 +57,7 @@
                     &kp Z        &kp X          &kp C        &kp D         &kp V                 &kp K         &kp H        &kp COMMA      &kp DOT      &kp MINUS 
             // |----------------------------------------------------------------------------------------------------------------------------------------------------|
             //                             |     DEL     |     BSP     |     TAB     |       |   ENTER     |     SPC      |     ALT     |
-                                            &lt MED DEL    &lt NAV BSPC  &lt MOU TAB         &lt SYM ENTER  &lt NUM SPACE  &lt FUN ESC
+                                            &lt MED DEL    &lt NAV BSPC  &lt MOU TAB         &lt NUM ENTER  &lt SYM SPACE  &lt FUN ESC
             //                             |-------------|-------------|-------------|-------|-------------|--------------|-------------|
                         >;
         };
@@ -69,13 +69,13 @@
 
             // |----------------------------------------------------------------------------------------------------------------------------------------------------|
             // |   BKT   |    7      |    8      |    9      |  -     |       |   TRNS    |   TRNS     |   TRNS    |   TRNS    |   TRNS    |
-                 &kp ASTRK      &kp 7      &kp 8      &kp 9      &kp MINUS                &trans   &trans   &trans   &trans   &trans
+                 &kp ASTRK      &kp N7      &kp N8      &kp N9      &kp MINUS                &trans   &trans   &trans   &trans   &trans
             // |----------------------------------------------------------------------------------------------------------------------------------------------------|
             // |   ;|:    |    4      |    5      |    6      |   PLUS    |       |   TRNS      | HRMR(N,E,I,O)        |
-                  &kp SEMI      &kp 4      &kp 5      &kp 6       &kp PLUS               &trans     &kp RSFT   &kp RCTRL   &kp RALT   &kp RGUI
+                  &kp SEMI      &kp N4      &kp N5      &kp N6       &kp PLUS               &trans     &kp RSFT   &kp RCTRL   &kp RALT   &kp RGUI
             // |----------------------------------------------------------------------------------------------------------------------------------------------------|
             // |   TRNS    |    1      |    2      |    3      |  EQL     |       |   TRNS    |   TRNS     |   TRNS    |   TRNS    |   TRNS    |
-                 &trans       &kp 1      &kp 2      &kp 3      &kp EQL               &trans   &trans   &trans   &trans   &trans
+                 &trans       &kp N1      &kp N2      &kp N3      &kp EQL               &trans   &trans   &trans   &trans   &trans
             // |----------------------------------------------------------------------------------------------------------------------------------------------------|
             //                             |   .    |   0   |   TRNS    |       |   TRNS    |   TRNS     |   TRNS    |
                                             &kp DOT   &kp 0    &trans         &trans   &trans   &trans
@@ -198,7 +198,7 @@
                     &bt BT_DISC 0   &bt BT_DISC 1   &bt BT_DISC 2   &bt BT_DISC 3   &bt BT_DISC 4               &trans   &trans   &trans   &trans   &trans
             // |----------------------------------------------------------------------------------------------------------------------------------------------------|
             // |   TRNS    |   TRNS     |   TRNS    |   TRNS    |   TRNS    |       |   M       | HRMR(N,E,I,O)                                  |
-                    &trans   &trans  &trans   &trans   &bt BT_CLR               &kp M      &kp RSFT   &kp RCTRL   &kp RALT   &kp RGUI
+                    &trans   &trans  &trans   &bt BT_CLR    &bt BT_CLR_ALL           &kp M      &kp RSFT   &kp RCTRL   &kp RALT   &kp RGUI
             // |----------------------------------------------------------------------------------------------------------------------------------------------------|
             // |   TRNS    |   TRNS     |   TRNS    |   TRNS    |   TRNS    |       |   TRNS    |   TRNS     |   TRNS    |   TRNS    |   TRNS    |
                     &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4             &trans   &trans   &trans   &trans   &trans
