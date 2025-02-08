@@ -75,7 +75,7 @@
 
             // |----------------------------------------------------------------------------------------------------------------------------------------------------|
             // |   BKT   |    7      |    8      |    9      |  -     |       |   TRNS    |   TRNS     |   TRNS    |   TRNS    |   TRNS    |
-                 &kp AST      &kp 7      &kp 8      &kp 9      &kp MINUS                &kp TRNS   &kp TRNS   &kp TRNS   &kp TRNS   &kp TRNS
+                 &kp ASTRK      &kp 7      &kp 8      &kp 9      &kp MINUS                &kp TRNS   &kp TRNS   &kp TRNS   &kp TRNS   &kp TRNS
             // |----------------------------------------------------------------------------------------------------------------------------------------------------|
             // |   ;|:    |    4      |    5      |    6      |   PLUS    |       |   TRNS      | HRMR(N,E,I,O)        |
                   &kp SEMI      &kp 4      &kp 5      &kp 6       &kp PLUS               &kp TRNS     &kp RSFT   &kp RCTRL   &kp RALT   &kp RGUI
