@@ -148,7 +148,7 @@
                     &trans   &trans   &trans   &trans   &trans            &trans    &msc SCRL_LEFT  &msc SCRL_DOWN   &msc SCRL_UP   &msc SCRL_RIGHT  
             // |----------------------------------------------------------------------------------------------------------------------------------------------------|
             //                             |   TRNS    |   TRNS    |   TRNS    |       |   RIGHT    |   LEFT     |   MIDDLE    |
-                                            &trans   &trans   &trans              &kmp MB2       &mkp MB1    &mkp MB3     
+                                            &trans   &trans   &trans              &mkp MB2       &mkp MB1    &mkp MB3     
             //                             |-------------|-------------|-------------|-------|-------------|--------------|-------------|
                         >;
         };
