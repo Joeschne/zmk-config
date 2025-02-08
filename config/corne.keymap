@@ -9,7 +9,6 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/pointing.h>
-#include <dt-bindings/zmk/bt.h>
 
 #define COLEMAK 0
 #define NUM 1 // numbers
@@ -20,13 +19,23 @@
 #define MED 6 // media layer
 #define BLU 7 // bluetooth control layer
 
-&mt {
-        flavor = "tap-preferred";
-        tapping-term-ms = <220>;
-        quick-tap-ms = <150>;
-};
+// Home Row Mods
+#define HRML(k1, k2, k3, k4) &ht LGUI k1   &ht LALT k2   &ht LCTRL k3   &ht LSHFT k4
+#define HRMR(k1, k2, k3, k4) &ht RSFT k1   &ht RCTRL k2   &ht RALT k3   &ht RGUI k4
 
 / {
+    behaviors {
+        ht: hold_tap {
+            label = "hold_tap";
+            compatible = "zmk, behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <220>;
+            quick-tap-ms = <150>;
+            global-quick-tap;
+            bindings = <&kp>, <&kp>;
+        };
+    };
 
     conditional_layers {
         compatible = "zmk,conditional-layers";
@@ -49,7 +58,7 @@
                     &kp Q        &kp W          &kp F         &kp P         &kp B                  &kp J         &kp L        &kp U          &kp Y        &kp SQT  
             // |----------------------------------------------------------------------------------------------------------------------------------------------------|
             // |      A      |      R      |      S      |      T      |      G      |       |      M      |      N       |      E      |      I      |      O      |
-                 &mt LGUI A     &mt LALT R    &mt LCTRL S  &mt LSHFT T        &kp G                &kp M      &mt RSHFT N   &mt RCTRL E    &mt RALT I     &mt RGUI O
+                    HRML(A,         R,            S,            T)         &kp G                &kp M         HRMR(N,           E,            I,            O)
             // |----------------------------------------------------------------------------------------------------------------------------------------------------|
             // |      Z      |      X      |      C      |      D      |      V      |       |      K      |      H       |     ,|;     |     .|:     |     -|_     |
                     &kp Z        &kp X          &kp C        &kp D         &kp V                 &kp K         &kp H        &kp COMMA      &kp DOT      &kp MINUS 
@@ -139,7 +148,7 @@
                     &trans   &trans   &trans   &trans   &trans            &trans    &msc SCRL_LEFT  &msc SCRL_DOWN   &msc SCRL_UP   &msc SCRL_RIGHT  
             // |----------------------------------------------------------------------------------------------------------------------------------------------------|
             //                             |   TRNS    |   TRNS    |   TRNS    |       |   RIGHT    |   LEFT     |   MIDDLE    |
-                                            &trans   &trans   &trans              &mkp MB2       &mkp MB1    &mkp MB3     
+                                            &trans   &trans   &trans              &kmp MB2       &mkp MB1    &mkp MB3     
             //                             |-------------|-------------|-------------|-------|-------------|--------------|-------------|
                         >;
         };
@@ -199,7 +208,7 @@
                     &trans   &trans  &trans   &trans   &bt BT_CLR               &kp M      &kp RSFT   &kp RCTRL   &kp RALT   &kp RGUI
             // |----------------------------------------------------------------------------------------------------------------------------------------------------|
             // |   TRNS    |   TRNS     |   TRNS    |   TRNS    |   TRNS    |       |   TRNS    |   TRNS     |   TRNS    |   TRNS    |   TRNS    |
-                    &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &kp BT_SEL 3   &bt BT_SEL 4             &trans   &trans   &trans   &trans   &trans
+                    &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4             &trans   &trans   &trans   &trans   &trans
             // |----------------------------------------------------------------------------------------------------------------------------------------------------|
             //                             |   TRNS    |   TRNS    |   TRNS    |       |   TRNS    |   TRNS     |   TRNS    |
                                             &trans   &trans   &trans         &trans   &trans   &trans
