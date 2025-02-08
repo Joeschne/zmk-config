@@ -48,7 +48,7 @@
 
             // |----------------------------------------------------------------------------------------------------------------------------------------------------|
             // |      Q      |      W      |      F      |      P      |      B      |       |      J      |      L       |      U      |      Y      |     '|?     |   
-                    &kp Q        &kp W          &kp F         &kp P         &kp B                  &kp J         &kp L        &kp U          &kp Y        &kp APOS  
+                    &kp Q        &kp W          &kp F         &kp P         &kp B                  &kp J         &kp L        &kp U          &kp Y        &kp APOSTROPHE   
             // |----------------------------------------------------------------------------------------------------------------------------------------------------|
             // |      A      |      R      |      S      |      T      |      G      |       |      M      |      N       |      E      |      I      |      O      |
                  &mt LGUI A     &mt LALT R    &mt LCTRL S  &mt LSHFT T        &kp G                &kp M      &mt RSHFT N   &mt RCTRL E    &mt RALT I     &mt RGUI O
@@ -75,10 +75,10 @@
                   &kp SEMI      &kp N4      &kp N5      &kp N6       &kp PLUS               &trans     &kp RSFT   &kp RCTRL   &kp RALT   &kp RGUI
             // |----------------------------------------------------------------------------------------------------------------------------------------------------|
             // |   TRNS    |    1      |    2      |    3      |  EQL     |       |   TRNS    |   TRNS     |   TRNS    |   TRNS    |   TRNS    |
-                 &trans       &kp N1      &kp N2      &kp N3      &kp EQL               &trans   &trans   &trans   &trans   &trans
+                 &kp N0       &kp N1      &kp N2      &kp N3      &kp EQL               &trans   &trans   &trans   &trans   &trans
             // |----------------------------------------------------------------------------------------------------------------------------------------------------|
             //                             |   .    |   0   |   TRNS    |       |   TRNS    |   TRNS     |   TRNS    |
-                                            &kp DOT   &kp 0    &trans         &trans   &trans   &trans
+                                            &kp DOT   &trans    &trans         &trans   &trans   &trans
             //                             |-------------|-------------|-------------|-------|-------------|--------------|-------------|
                         >;
         };
