@@ -25,7 +25,10 @@
         quick-tap-ms = <150>;
 };
 
-/ {
+/ {   
+    chosen {
+        zmk,physical-layout = &foostan_corne_5col_layout;
+    };    
 
     conditional_layers {
         compatible = "zmk,conditional-layers";
