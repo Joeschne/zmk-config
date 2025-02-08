@@ -38,7 +38,7 @@
         };
     };
 
-    keymap {
+    keymap { I can start trying to properly type now. Let
         compatible = "zmk,keymap";
 
         /* ─── DEFAULT (COLEMAK) LAYER ─────────────────────────────────────────────────────────────── */
@@ -48,7 +48,7 @@
 
             // |----------------------------------------------------------------------------------------------------------------------------------------------------|
             // |      Q      |      W      |      F      |      P      |      B      |       |      J      |      L       |      U      |      Y      |     '|?     |   
-                    &kp Q        &kp W          &kp F         &kp P         &kp B                  &kp J         &kp L        &kp U          &kp Y        &kp SQT  
+                    &kp Q        &kp W          &kp F         &kp P         &kp B                  &kp J         &kp L        &kp U          &kp Y        &kp APOS  
             // |----------------------------------------------------------------------------------------------------------------------------------------------------|
             // |      A      |      R      |      S      |      T      |      G      |       |      M      |      N       |      E      |      I      |      O      |
                  &mt LGUI A     &mt LALT R    &mt LCTRL S  &mt LSHFT T        &kp G                &kp M      &mt RSHFT N   &mt RCTRL E    &mt RALT I     &mt RGUI O
