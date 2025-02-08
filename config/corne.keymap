@@ -38,7 +38,7 @@
         };
     };
 
-    keymap { I can start trying to properly type now. Let
+    keymap {
         compatible = "zmk,keymap";
 
         /* ─── DEFAULT (COLEMAK) LAYER ─────────────────────────────────────────────────────────────── */
