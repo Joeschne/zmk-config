@@ -20,9 +20,12 @@
 #define MED 6 // media layer
 #define BLU 7 // bluetooth control layer
 
-// Home Row Mods
-#define HRML(k1, k2, k3, k4) &mt LGUI k1   &mt LALT k2   &mt LCTRL k3   &mt LSHFT k4
-#define HRMR(k1, k2, k3, k4) &mt RSFT k1   &mt RCTRL k2   &mt RALT k3   &mt RGUI k4
+&mt {
+        flavor = "tap-preferred";
+        tapping-term-ms = <220>;
+        quick-tap-ms = <150>;
+        global-quick-tap;
+};
 
 / {
 
@@ -47,7 +50,7 @@
                     &kp Q        &kp W          &kp F         &kp P         &kp B                  &kp J         &kp L        &kp U          &kp Y        &kp SQT  
             // |----------------------------------------------------------------------------------------------------------------------------------------------------|
             // |      A      |      R      |      S      |      T      |      G      |       |      M      |      N       |      E      |      I      |      O      |
-                    HRML(A,         R,            S,            T)         &kp G                &kp M         HRMR(N,           E,            I,            O)
+                 &mt LGUI A     &mt LALT R    &mt LCTRL S  &mt LSHFT T        &kp G                &kp M      &mt RSHFT N   &mt RCTRL E    &mt RALT I     &mt RGUI O
             // |----------------------------------------------------------------------------------------------------------------------------------------------------|
             // |      Z      |      X      |      C      |      D      |      V      |       |      K      |      H       |     ,|;     |     .|:     |     -|_     |
                     &kp Z        &kp X          &kp C        &kp D         &kp V                 &kp K         &kp H        &kp COMMA      &kp DOT      &kp MINUS 
