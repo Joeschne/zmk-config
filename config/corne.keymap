@@ -117,13 +117,13 @@
 
             // |----------------------------------------------------------------------------------------------------------------------------------------------------|
             // |    TRNS   |   TRNS    |   TRNS    |   TRNS    |   TRNS    |       |   REDO    |   COPY    |   PASTE    |    CUT    |   UNDO    |
-                    &trans   &trans   &trans   &trans   &trans            &kp REDO    &kp COPY   &kp PASTE   &kp CUT   &kp UNDO   
+                    &trans   &trans   &trans   &trans   &trans            &kp C_AC_REDO    &kp C_AC_COPY   &kp C_AC_PASTE   &kp C_AC_CUT   &kp C_AC_UNDO   
             // |----------------------------------------------------------------------------------------------------------------------------------------------------|
             // |  HRML(A, R, S, T)                            |    TRNS     |       |     CAPS    |   LEFT     |    DOWN     |   UP    |   RIGHT    |
                     &kp LGUI  &kp LALT   &kp LCTRL   &kp LSHFT    &trans               &kp CAPS    &kp LEFT   &kp DOWN   &kp UP    &kp RGHT   
             // |----------------------------------------------------------------------------------------------------------------------------------------------------|
-            // |    TRNS   |   TRNS    |   TRNS    |   TRNS    |   TRNS    |       |   INS     |   HOME     |   PGDN    |   PGUP    |   END     |
-                    &trans   &trans   &trans   &trans   &trans                &kp INS    &kp HOME   &kp PGDN   &kp PGUP   &kp END
+            // |    TRNS   |   TRNS    |   TRNS    |   TRNS    |   TRNS    |       |   TRNS    |   HOME     |   PGDN    |   PGUP    |   END     |
+                    &trans   &trans   &trans   &trans   &trans                &trans    &kp HOME   &kp PG_DN   &kp PG_UP   &kp END
             // |----------------------------------------------------------------------------------------------------------------------------------------------------|
             //                             |   TRNS    |   TRNS    |   TRNS    |       |   TRNS    |   TRNS     |   TRNS    |
                                             &trans   &trans   &trans         &trans   &trans   &trans
@@ -137,17 +137,17 @@
                         bindings = <
 
             // |----------------------------------------------------------------------------------------------------------------------------------------------------|
-            // |    TRNS   |   TRNS    |   TRNS    |   TRNS    |   TRNS    |       |   BTN1    |   BTN2     |   BTN3    |   BTN4    |   BTN5    |
-                    &trans   &trans   &trans   &trans   &trans                &kp BTN1   &kp BTN2   &kp BTN3   &kp BTN4   &kp BTN5
+            // |    TRNS   |   TRNS    |   TRNS    |   TRNS    |   TRNS    |       |   MB1    |   MB2     |   MB3    |   MB4    |   MB5    |
+                    &trans   &trans   &trans   &trans   &trans                &mkp MB1   &mkp MB2   &mkp MB3   &mkp MB4   &mkp MB5
             // |----------------------------------------------------------------------------------------------------------------------------------------------------|
-            // |  HRML(A, R, S, T)                               |    TRNS     |       |   TRNS    |    MS_L    |   MS_D     |   MS_U    |   MS_R    |
-                    &kp LGUI  &kp LALT   &kp LCTRL   &kp LSHFT    &trans             &trans       &kp MS_L   &kp MS_D       &kp MS_U    &kp MS_R   
+            // |  HRML(A, R, S, T)                               |    TRNS     |       |   TRNS    | MOVE_LEFT  | MOVE_DOWN    | MOVE_UP  | MOVE_RIGHT  |
+                    &kp LGUI  &kp LALT   &kp LCTRL   &kp LSHFT    &trans             &trans   &mmv MOVE_LEFT  &mmv MOVE_DOWN   &mmv MOVE_UP   &mmv MOVE_RIGHT   
             // |----------------------------------------------------------------------------------------------------------------------------------------------------|
             // |    TRNS   |   TRNS    |   TRNS    |   TRNS    |   TRNS    |       |   TRNS    |  MS_WH_L   |  MS_WH_D   |  MS_WH_U   |    MS_WH_R   |
-                    &trans   &trans   &trans   &trans   &trans            &trans    &kp MS_WH_L   &kp MS_WH_D   &kp MS_WH_U   &kp MS_WH_R   
+                    &trans   &trans   &trans   &trans   &trans            &trans    &msc SCRL_LEFT  &msc SCRL_DOWN   &msc SCRL_UP   &msc SCRL_RIGHT  
             // |----------------------------------------------------------------------------------------------------------------------------------------------------|
             //                             |   TRNS    |   TRNS    |   TRNS    |       |   RIGHT    |   LEFT     |   MIDDLE    |
-                                            &trans   &trans   &trans              &kp BTN2       &kp BTN1    &kp BTN3     
+                                            &trans   &trans   &trans              &kmp MB2       &mkp MB1    &mkp MB3     
             //                             |-------------|-------------|-------------|-------|-------------|--------------|-------------|
                         >;
         };
