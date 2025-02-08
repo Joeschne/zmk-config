@@ -75,16 +75,16 @@
 
             // |----------------------------------------------------------------------------------------------------------------------------------------------------|
             // |   BKT   |    7      |    8      |    9      |  -     |       |   TRNS    |   TRNS     |   TRNS    |   TRNS    |   TRNS    |
-                 &kp ASTRK      &kp 7      &kp 8      &kp 9      &kp MINUS                &kp TRNS   &kp TRNS   &kp TRNS   &kp TRNS   &kp TRNS
+                 &kp ASTRK      &kp 7      &kp 8      &kp 9      &kp MINUS                &trans   &trans   &trans   &trans   &trans
             // |----------------------------------------------------------------------------------------------------------------------------------------------------|
             // |   ;|:    |    4      |    5      |    6      |   PLUS    |       |   TRNS      | HRMR(N,E,I,O)        |
-                  &kp SEMI      &kp 4      &kp 5      &kp 6       &kp PLUS               &kp TRNS     &kp RSFT   &kp RCTRL   &kp RALT   &kp RGUI
+                  &kp SEMI      &kp 4      &kp 5      &kp 6       &kp PLUS               &trans     &kp RSFT   &kp RCTRL   &kp RALT   &kp RGUI
             // |----------------------------------------------------------------------------------------------------------------------------------------------------|
             // |   TRNS    |    1      |    2      |    3      |  EQL     |       |   TRNS    |   TRNS     |   TRNS    |   TRNS    |   TRNS    |
-                 &kp TRNS       &kp 1      &kp 2      &kp 3      &kp EQL               &kp TRNS   &kp TRNS   &kp TRNS   &kp TRNS   &kp TRNS
+                 &trans       &kp 1      &kp 2      &kp 3      &kp EQL               &trans   &trans   &trans   &trans   &trans
             // |----------------------------------------------------------------------------------------------------------------------------------------------------|
             //                             |   .    |   0   |   TRNS    |       |   TRNS    |   TRNS     |   TRNS    |
-                                            &kp DOT   &kp 0    &kp TRNS         &kp TRNS   &kp TRNS   &kp TRNS
+                                            &kp DOT   &kp 0    &trans         &trans   &trans   &trans
             //                             |-------------|-------------|-------------|-------|-------------|--------------|-------------|
                         >;
         };
@@ -105,7 +105,7 @@
                   &kp PRCNT     &kp PLUS     &kp EXCL     &kp QMARK      &kp HASH              &kp DLLR       &kp LBKT        &kp RBKT       &kp LT       &kp GT 
             // |----------------------------------------------------------------------------------------------------------------------------------------------------|
             //                             |   TRNS    |   TRNS       |   TRNS      |       |   TRNS       |   TRNS        |   TRNS    |
-                                            &kp TRNS        &kp TRNS      &kp TRNS              &kp TRNS      &kp TRNS        &kp TRNS
+                                            &trans        &trans      &trans              &trans      &trans        &trans
             //                             |-------------|-------------|-------------|-------|-------------|--------------|-------------|
                         >;
         };
@@ -117,16 +117,16 @@
 
             // |----------------------------------------------------------------------------------------------------------------------------------------------------|
             // |    TRNS   |   TRNS    |   TRNS    |   TRNS    |   TRNS    |       |   REDO    |   COPY    |   PASTE    |    CUT    |   UNDO    |
-                    &kp TRNS   &kp TRNS   &kp TRNS   &kp TRNS   &kp TRNS            &kp REDO    &kp COPY   &kp PASTE   &kp CUT   &kp UNDO   
+                    &trans   &trans   &trans   &trans   &trans            &kp REDO    &kp COPY   &kp PASTE   &kp CUT   &kp UNDO   
             // |----------------------------------------------------------------------------------------------------------------------------------------------------|
             // |  HRML(A, R, S, T)                            |    TRNS     |       |     CAPS    |   LEFT     |    DOWN     |   UP    |   RIGHT    |
-                    &kp LGUI  &kp LALT   &kp LCTRL   &kp LSHFT    &kp TRNS               &kp CAPS    &kp LEFT   &kp DOWN   &kp UP    &kp RGHT   
+                    &kp LGUI  &kp LALT   &kp LCTRL   &kp LSHFT    &trans               &kp CAPS    &kp LEFT   &kp DOWN   &kp UP    &kp RGHT   
             // |----------------------------------------------------------------------------------------------------------------------------------------------------|
             // |    TRNS   |   TRNS    |   TRNS    |   TRNS    |   TRNS    |       |   INS     |   HOME     |   PGDN    |   PGUP    |   END     |
-                    &kp TRNS   &kp TRNS   &kp TRNS   &kp TRNS   &kp TRNS                &kp INS    &kp HOME   &kp PGDN   &kp PGUP   &kp END
+                    &trans   &trans   &trans   &trans   &trans                &kp INS    &kp HOME   &kp PGDN   &kp PGUP   &kp END
             // |----------------------------------------------------------------------------------------------------------------------------------------------------|
             //                             |   TRNS    |   TRNS    |   TRNS    |       |   TRNS    |   TRNS     |   TRNS    |
-                                            &kp TRNS   &kp TRNS   &kp TRNS         &kp TRNS   &kp TRNS   &kp TRNS
+                                            &trans   &trans   &trans         &trans   &trans   &trans
             //                             |-------------|-------------|-------------|-------|-------------|--------------|-------------|
                         >;
         };
@@ -138,16 +138,16 @@
 
             // |----------------------------------------------------------------------------------------------------------------------------------------------------|
             // |    TRNS   |   TRNS    |   TRNS    |   TRNS    |   TRNS    |       |   BTN1    |   BTN2     |   BTN3    |   BTN4    |   BTN5    |
-                    &kp TRNS   &kp TRNS   &kp TRNS   &kp TRNS   &kp TRNS                &kp BTN1   &kp BTN2   &kp BTN3   &kp BTN4   &kp BTN5
+                    &trans   &trans   &trans   &trans   &trans                &kp BTN1   &kp BTN2   &kp BTN3   &kp BTN4   &kp BTN5
             // |----------------------------------------------------------------------------------------------------------------------------------------------------|
             // |  HRML(A, R, S, T)                               |    TRNS     |       |   TRNS    |    MS_L    |   MS_D     |   MS_U    |   MS_R    |
-                    &kp LGUI  &kp LALT   &kp LCTRL   &kp LSHFT    &kp TRNS             &kp TRNS       &kp MS_L   &kp MS_D       &kp MS_U    &kp MS_R   
+                    &kp LGUI  &kp LALT   &kp LCTRL   &kp LSHFT    &trans             &trans       &kp MS_L   &kp MS_D       &kp MS_U    &kp MS_R   
             // |----------------------------------------------------------------------------------------------------------------------------------------------------|
             // |    TRNS   |   TRNS    |   TRNS    |   TRNS    |   TRNS    |       |   TRNS    |  MS_WH_L   |  MS_WH_D   |  MS_WH_U   |    MS_WH_R   |
-                    &kp TRNS   &kp TRNS   &kp TRNS   &kp TRNS   &kp TRNS            &kp TRNS    &kp MS_WH_L   &kp MS_WH_D   &kp MS_WH_U   &kp MS_WH_R   
+                    &trans   &trans   &trans   &trans   &trans            &trans    &kp MS_WH_L   &kp MS_WH_D   &kp MS_WH_U   &kp MS_WH_R   
             // |----------------------------------------------------------------------------------------------------------------------------------------------------|
             //                             |   TRNS    |   TRNS    |   TRNS    |       |   RIGHT    |   LEFT     |   MIDDLE    |
-                                            &kp TRNS   &kp TRNS   &kp TRNS              &kp BTN2       &kp BTN1    &kp BTN3     
+                                            &trans   &trans   &trans              &kp BTN2       &kp BTN1    &kp BTN3     
             //                             |-------------|-------------|-------------|-------|-------------|--------------|-------------|
                         >;
         };
@@ -159,16 +159,16 @@
 
             // |----------------------------------------------------------------------------------------------------------------------------------------------------|
             // |    TRNS   |   TRNS    |   TRNS    |   TRNS    |   TRNS    |         |   TRNS    |   TRNS    |   MPLY    |   MUTE    |   TRNS    |
-                    &kp TRNS   &kp TRNS   &kp TRNS   &kp TRNS   &kp TRNS              &kp TRNS  &kp TRNS         &kp C_PP     &kp C_MUTE   &kp TRNS
+                    &trans   &trans   &trans   &trans   &trans              &trans  &trans         &kp C_PP     &kp C_MUTE   &trans
             // |----------------------------------------------------------------------------------------------------------------------------------------------------|
             // |  HRML(A, R, S, T)                              |    TRNS     |        |  TRNS    |   MPRE    |   VOLU    |   VOLD     |   MNXT    |
-                    &kp LGUI  &kp LALT   &kp LCTRL   &kp LSHFT    &kp TRNS                &kp TRNS   &kp C_PREV    &kp C_VOL_UP   &kp C_VOL_DN    &kp C_NEXT
+                    &kp LGUI  &kp LALT   &kp LCTRL   &kp LSHFT    &trans                &trans   &kp C_PREV    &kp C_VOL_UP   &kp C_VOL_DN    &kp C_NEXT
             // |----------------------------------------------------------------------------------------------------------------------------------------------------|
             // |    TRNS   |   TRNS    |   TRNS    |   TRNS    |   TRNS    |       |   TRNS    |   TRNS     |   Bright    |   Dark    |   Backlight    |
-                    &kp TRNS   &kp TRNS   &kp TRNS   &kp TRNS   &kp TRNS                &kp TRNS   &kp TRNS   &kp C_BRI_UP   &kp C_BRI_DN   &kp C_BKLT_TOG
+                    &trans   &trans   &trans   &trans   &trans                &trans   &trans   &kp C_BRI_UP   &kp C_BRI_DN   &kp C_BKLT_TOG
             // |----------------------------------------------------------------------------------------------------------------------------------------------------|
             //                             |   TRNS    |   TRNS    |   TRNS    |       |   Play/Pause    |   MNXT     |   MUTE    |
-                                            &kp TRNS   &kp TRNS   &kp TRNS               &kp C_PP   &kp C_NEXT   &kp C_MUTE
+                                            &trans   &trans   &trans               &kp C_PP   &kp C_NEXT   &kp C_MUTE
             //                             |-------------|-------------|-------------|-------|-------------|--------------|-------------|
                         >;
         };
@@ -180,16 +180,16 @@
 
             // |----------------------------------------------------------------------------------------------------------------------------------------------------|
             // |   F12     |  F7      |   F8      |   F9      |  TRNS     |       |   TRNS    |   TRNS     |   TRNS    |   TRNS    |   TRNS    |
-                  &kp F12   &kp F7     &kp F8      &kp F9     &kp TRNS                &kp TRNS   &kp TRNS   &kp TRNS   &kp TRNS   &kp TRNS
+                  &kp F12   &kp F7     &kp F8      &kp F9     &trans                &trans   &trans   &trans   &trans   &trans
             // |----------------------------------------------------------------------------------------------------------------------------------------------------|
             // |   F11     |   F4      |   F5      |   F6      |  TRNS     |       |   TRNS       | HRMR(N,E,I,O)                               |
-                  &kp F11   &kp F4     &kp F5     &kp F6       &kp TRNS               &kp TRNS      &kp RSFT   &kp RCTRL   &kp RALT   &kp RGUI
+                  &kp F11   &kp F4     &kp F5     &kp F6       &trans               &trans      &kp RSFT   &kp RCTRL   &kp RALT   &kp RGUI
             // |----------------------------------------------------------------------------------------------------------------------------------------------------|
             // |    F10    |   F1      |   F2      |   F3    |    TRNS     |       |   TRNS    |   TRNS     |   TRNS    |   TRNS    |   TRNS    |
-                  &kp F10   &kp F1     &kp F2     &kp F3     &kp TRNS               &kp TRNS   &kp TRNS   &kp TRNS   &kp TRNS   &kp TRNS
+                  &kp F10   &kp F1     &kp F2     &kp F3     &trans               &trans   &trans   &trans   &trans   &trans
             // |----------------------------------------------------------------------------------------------------------------------------------------------------|
             //                             |   TRNS    |   TRNS    |   TRNS    |       |   TRNS    |   TRNS     |   TRNS    |
-                                            &kp TRNS   &kp TRNS   &kp TRNS         &kp TRNS   &kp TRNS   &kp TRNS
+                                            &trans   &trans   &trans         &trans   &trans   &trans
             //                             |-------------|-------------|-------------|-------|-------------|--------------|-------------|
                         >;
         };
@@ -201,16 +201,16 @@
 
             // |----------------------------------------------------------------------------------------------------------------------------------------------------|
             // |   TRNS    |   TRNS     |   TRNS    |   TRNS    |   TRNS    |       |   TRNS    |   TRNS     |   TRNS    |   TRNS    |   TRNS    |
-                    &bt BT_DISC 0   &bt BT_DISC 1   &bt BT_DISC 2   &bt BT_DISC 3   &bt BT_DISC 4               &kp TRNS   &kp TRNS   &kp TRNS   &kp TRNS   &kp TRNS
+                    &bt BT_DISC 0   &bt BT_DISC 1   &bt BT_DISC 2   &bt BT_DISC 3   &bt BT_DISC 4               &trans   &trans   &trans   &trans   &trans
             // |----------------------------------------------------------------------------------------------------------------------------------------------------|
             // |   TRNS    |   TRNS     |   TRNS    |   TRNS    |   TRNS    |       |   M       | HRMR(N,E,I,O)                                  |
-                    &kp TRNS   &kp TRNS  &kp TRNS   &kp TRNS   &bt BT_CLR               &kp M      &kp RSFT   &kp RCTRL   &kp RALT   &kp RGUI
+                    &trans   &trans  &trans   &trans   &bt BT_CLR               &kp M      &kp RSFT   &kp RCTRL   &kp RALT   &kp RGUI
             // |----------------------------------------------------------------------------------------------------------------------------------------------------|
             // |   TRNS    |   TRNS     |   TRNS    |   TRNS    |   TRNS    |       |   TRNS    |   TRNS     |   TRNS    |   TRNS    |   TRNS    |
-                    &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &kp BT_SEL 3   &bt BT_SEL 4             &kp TRNS   &kp TRNS   &kp TRNS   &kp TRNS   &kp TRNS
+                    &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &kp BT_SEL 3   &bt BT_SEL 4             &trans   &trans   &trans   &trans   &trans
             // |----------------------------------------------------------------------------------------------------------------------------------------------------|
             //                             |   TRNS    |   TRNS    |   TRNS    |       |   TRNS    |   TRNS     |   TRNS    |
-                                            &kp TRNS   &kp TRNS   &kp TRNS         &kp TRNS   &kp TRNS   &kp TRNS
+                                            &trans   &trans   &trans         &trans   &trans   &trans
             //                             |-------------|-------------|-------------|-------|-------------|--------------|-------------|
                         >;
         };
