@@ -120,7 +120,7 @@
                     &trans   &trans   &trans   &trans   &trans            &kp C_AC_REDO    &kp C_AC_COPY   &kp C_AC_PASTE   &kp C_AC_CUT   &kp C_AC_UNDO   
             // |----------------------------------------------------------------------------------------------------------------------------------------------------|
             // |  HRML(A, R, S, T)                            |    TRNS     |       |     CAPS    |   LEFT     |    DOWN     |   UP    |   RIGHT    |
-                    &kp LGUI  &kp LALT   &kp LCTRL   &kp LSHFT    &trans               &kp CAPS    &kp LEFT   &kp DOWN   &kp UP    &kp RGHT   
+                    &kp LGUI  &kp LALT   &kp LCTRL   &kp LSHFT    &trans               &kp CAPS    &kp LEFT   &kp DOWN   &kp UP    &kp RIGHT   
             // |----------------------------------------------------------------------------------------------------------------------------------------------------|
             // |    TRNS   |   TRNS    |   TRNS    |   TRNS    |   TRNS    |       |   TRNS    |   HOME     |   PGDN    |   PGUP    |   END     |
                     &trans   &trans   &trans   &trans   &trans                &trans    &kp HOME   &kp PG_DN   &kp PG_UP   &kp END
